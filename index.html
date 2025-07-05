@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Mario Retrô | Anna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Intro com GIF -->
+  <div id="intro">
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDlmNWZlY2d1enV0cXhqeDlyN2J2MmJpOGN0ejFlYXB3MXR2bGFrdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EpB8oRhHSQcnu/giphy.gif" alt="Mario GIF" />
+    <h1>PORTFOLIO RETRO ANNA MACHALOUS</h1>
+    <p>> PRESS START</p>
+  </div>
+
+  <!-- Menu -->
+  <nav class="menu-animado">
+    <ul>
+      <li><a href="#sobre">SOBRE</a></li>
+      <li><a href="#projetos">PROJETOS</a></li>
+      <li><a href="#habilidades">HABILIDADES</a></li>
+      <li><a href="#formacao">FORMACAO</a></li>
+      <li><a href="#experiencia">EXPERIENCIA</a></li>
+    </ul>
+  </nav>
+
+  <!--Cogumelo e caixa do mario -->
+  <div class="caixas-cair">
+</div>
+<div class="cogumelos-cair">
+</div>
+
+
+
+  <main class="container">
+   <div class="header-info">
+  <div class="intro-topo">
+    <img src="img/minha-foto.jfif" alt="Foto de Anna" class="foto-anna">
+    <div class="intro-textos">
+      <h1>Anna Machalous</h1>
+      <p>Desenvolvedora Web | Estudante de ADS</p>
+      <p>
+        <a href="mailto:amachalous@gmail.com">amachalous@gmail.com</a> |
+        <a href="https://github.com/annamachalous">GitHub</a> |
+        <a href="https://www.linkedin.com/in/annamachalous/">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+    <section id="sobre">
+      <h2>SOBRE MIM</h2>
+<p>
+Sou apaixonada por tecnologia, inovação e pelo impacto que a inteligência artificial pode causar na vida das pessoas. Desde que comecei a estudar Análise e Desenvolvimento de Sistemas, descobri um universo de possibilidades, e foi aí que me encantei com o poder da programação para criar soluções reais.
+</p>
+
+<p>
+Tenho me aprofundado na linguagem Java e estou construindo minha carreira com foco em desenvolvimento backend. Gosto da lógica, da estrutura e da robustez dessa linguagem e me vejo crescendo como desenvolvedora Java em projetos que exijam performance, segurança e boas práticas.
+</p>
+
+<p>
+A IA, para mim, é mais do que uma tendência: é um campo que une minha curiosidade, criatividade e desejo de transformar o mundo de forma prática e ética. Quero seguir contribuindo com soluções que sejam inteligentes, inclusivas e acessíveis, unindo minha base técnica ao olhar humano.
+</p>
+
+<p>
+Levo comigo uma vontade constante de aprender, criar e evoluir. Acredito que tecnologia é uma ponte  e eu quero estar sempre ajudando a construir caminhos com ela.
+</p>
+<p>Todos meus projetos estão disponiveis no meu GitHub</p>
+ </section>
+    <section id="projetos">
+      <h2>PROJETOS</h2>
+      <div class="item">
+        <p class="cargo">Portfólio Super Mario</p>
+        <p class="data">2025</p>
+        <p>Um portfólio visual inspirado no Super Mario, usando apenas HTML e CSS. Estilizado com fontes retrô.</p>
+      </div>
+      <div class="item">
+        <p class="cargo">Sistema de Cadastro</p>
+        <p class="data">2025</p>
+        <p>Aplicativo simples de cadastro de usuários com localStorage.</p>
+      </div>
+      <div class="item">
+        <p class="cargo">PetCode</p>
+        <p class="data">2025</p>
+        <p>A proposta é criar um sistema simples, funcional e com visual fofo, que apoie ONGs no gerenciamento de animais para adoção, resgates, e comunicação com adotantes.</p>
+      </div> 
+    </section>
+
+    <section id="habilidades">
+      <h2>HABILIDADES</h2>
+      <div class="skills-list">
+        <span class="skill-item">HTML5</span>
+        <span class="skill-item">CSS3</span>
+        <span class="skill-item">JavaScript</span>
+        <span class="skill-item">Git & GitHub</span>
+        <span class="skill-item">Figma</span>
+        <span class="skill-item">MySQL</span>
+        <span class="skill-item">Java</span>
+      </div>
+    </section>
+
+    <section id="formacao">
+      <h2>FORMACAO</h2>
+      <div class="item">
+        <p class="curso">Análise e Desenvolvimento de Sistemas</p>
+        <p class="instituicao">Faculdade UNINTER</p>
+        <p class="data">2024 - Previsão de formatura 08/2027
+        </p>
+      </div>
+    </section>
+
+    <section id="experiencia">
+  <h2>EXPERIENCIA</h2>
+  <div class="item">
+    <p class="cargo">Participante de Hackathon</p>
+    <p class="empresa">Blip</p>
+    <p class="data">30 de junho a 1 de julho de 2025</p>
+    <p>
+      Desenvolvimento de ideia para chatbot voltado ao pagamento e doações para ONGs.
+      Criamos o fluxograma do sistema, definimos APIs necessárias para integração e
+      trabalhamos presencialmente em São Paulo durante o evento.
+    </p>
+  </div>
+</section>
+
+  </main>
+
+    <!--Javascript da pagina -->
+
+  <script>
+    document.getElementById('intro').addEventListener('click', () => {
+      document.getElementById('intro').style.display = 'none';
+    });
+
+    const sections = document.querySelectorAll('section');
+    function checkVisibility() {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        if (top < triggerBottom) {
+          section.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('load', checkVisibility);
+  </script>
+  <script>
+  const numCogumelos = 10; 
+  const numCaixas = 10;     
+
+  const cogumelosContainer = document.querySelector('.cogumelos-cair');
+  const caixasContainer = document.querySelector('.caixas-cair');
+
+  function randomLeft() {
+    return Math.random() * 100; 
+  }
+
+  function randomDelay(maxDelay = 12) {
+    return Math.random() * maxDelay; 
+  }
+
+  // Limpa containers para não duplicar
+  cogumelosContainer.innerHTML = '';
+  caixasContainer.innerHTML = '';
+
+  // Cria cogumelos
+  for (let i = 0; i < numCogumelos; i++) {
+    const img = document.createElement('img');
+    img.src = 'img/cogumelo.png';
+    img.className = 'cogumelo';
+    img.style.left = randomLeft() + '%';
+    img.style.animationDelay = randomDelay() + 's';
+    cogumelosContainer.appendChild(img);
+  }
+
+  // Cria caixas
+  for (let i = 0; i < numCaixas; i++) {
+    const img = document.createElement('img');
+    img.src = 'img/caixa-mario.png';
+    img.className = 'caixa';
+    img.style.left = randomLeft() + '%';
+    img.style.animationDelay = randomDelay() + 's';
+    caixasContainer.appendChild(img);
+  }
+</script>
+
+</body>
+</html>
+
+
+
