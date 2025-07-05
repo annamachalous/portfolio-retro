@@ -18,6 +18,7 @@
 
   <!-- Menu -->
   <nav class="menu-animado">
+    <div class="hamburguer" id="hamburguer">&#9776;</div>
     <ul>
       <li><a href="#sobre">SOBRE</a></li>
       <li><a href="#projetos">PROJETOS</a></li>
@@ -187,6 +188,13 @@ Levo comigo uma vontade constante de aprender, criar e evoluir. Acredito que tec
     img.style.animationDelay = randomDelay() + 's';
     caixasContainer.appendChild(img);
   }
+   // Menu Mobile
+  const hamburguer = document.getElementById('hamburguer');
+const navLinks = document.getElementById('nav-links');
+
+hamburguer.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
 </script>
 
 </body>
